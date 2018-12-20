@@ -57,7 +57,7 @@ function imageDataToGrayscale(imgData) {
             var alpha = imgData.data[offset+3];
             // weird: when painting with stroke, alpha == 0 means white;
             // alpha > 0 is a grayscale value; in that case I simply take the R value
-            if (alpha == 0) {
+            if (alpha === 0) {
                 imgData.data[offset] = 255;
                 imgData.data[offset+1] = 255;
                 imgData.data[offset+2] = 255;

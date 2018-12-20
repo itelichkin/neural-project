@@ -1,5 +1,5 @@
-<section>
-  <h1>Recognizing hand-written digits from MNIST dataset with Brain.js. Neural Networks live example.</h1>
+<section class="main-container">
+  <h1>Recognizing hand-written digits (from 0 to 9) by using MNIST dataset and Brain.js.</h1>
   <p>
     Draw a digit in the box below and click the "recognize" button.
   </p>
@@ -10,8 +10,15 @@
     <div id="result"></div>
     <div style="clear: right"></div>
   </div>
-  <button type="button" id="sketchClearButton">Clear</button>
-  <button type="button" id="sketchRecogniseButton">Recognise</button>
+  <div class="action-buttons">
+    <button mat-button id="sketchClearButton" class="clear">
+      <mat-icon>clear</mat-icon>
+    </button>
+    <button mat-button color="primary" id="sketchRecogniseButton" class="recognize">
+      <mat-icon>search</mat-icon>
+    </button>
+  </div>
+
 
   <br/>
   <br/>
