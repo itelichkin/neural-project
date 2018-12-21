@@ -1,7 +1,3 @@
-module.exports = function tryToTrain() {
-
-};
-
 const brain = require('brain.js');
 const fs = require('fs');
 const mnist = require('mnist');
@@ -10,7 +6,6 @@ const net = new brain.NeuralNetwork();
 const set = mnist.set(20000, 0);
 
 const trainingSet = set.training;
-//const testSet = set.test;
 
 net.train(trainingSet,
   {
@@ -22,7 +17,7 @@ net.train(trainingSet,
   }
 );
 
-let wstream = fs.createWriteStream('./assets/data/mnistTrain.json');
+let wstream = fs.createWriteStream('./src/assets/data/mnistTrain.json');
 wstream.write(JSON.stringify(net.toJSON(),null,2));
 wstream.end();
 

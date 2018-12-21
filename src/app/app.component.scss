@@ -1,5 +1,42 @@
 .main-container {
+  h1 {
+    text-align: center;
+    color: #757575;
+  }
+
+  #container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    #sketchpad {
+      border: 5px solid #077;
+    }
+
+    #thumbnail {
+      border: 1px solid #077;
+    }
+
+    #result {
+      font-size: 128pt;
+      width: 120px;
+      height: 280px;
+      border: 5px solid #757575;
+      text-align: center;
+      line-height: 280px;
+    }
+  }
+
+  p {
+    width: 100%;
+    color: #757575;
+    text-align: center;
+  }
+
   .action-buttons {
+    text-align: center;
+
     button {
       margin-right: 5px;
     }
